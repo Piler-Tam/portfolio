@@ -184,8 +184,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
   projects: [
     {
       video: require("./assets/videos/AssetPlacement.mp4"),
@@ -207,18 +206,14 @@ const bigProjects = {
       projectName: "Touch Program for Immersive Cave",
       projectDesc: "An interactive LIDAR-based touch interface system for immersive CAVE environments. Enables users to interact with virtual scenes using natural hand gestures on physical walls.",
     },
-    // {
-    //   video: require("./assets/videos/ChainVR20240807.mp4"),
-    //   projectName: "VR Training",
-    //   projectDesc: "A virtual reality training environment designed for industrial applications. Allows users to practice complex operations in a safe, controlled virtual space.",
-    // },
     {
       video: require("./assets/videos/EPD.mp4"),
       projectName: "Immersive Cave for EPD in Plaza Hollywood",
       projectDesc: "A public-facing immersive installation to educate visitors about environmental protection topics. Developed for the Environmental Protection Department using CAVE technology.",
-    },
+    }
+    ,
     {
-      video: require("./assets/videos/AR Rock Climbing.mp4"),
+      video: require("./assets/videos/AR_Rock_Climbing.mp4"),
       projectName: "AR Rock Climbing",
       projectDesc: "An augmented reality experience that merges physical rock climbing with interactive game elements. Players climb a real wall while engaging with virtual targets effects projected onto the surface, creating a gamified fitness challenge.",
     },

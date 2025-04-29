@@ -1,10 +1,14 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectsPerPage = 5;
+  const {isDark} = useContext(StyleContext);
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -13,14 +17,24 @@ export default function StartupProject() {
     win.focus();
   }
 
-  const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
   }
+
+  // 計算當前頁面的項目
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = bigProjects.projects.slice(indexOfFirstProject, indexOfLastProject);
+  const totalPages = Math.ceil(bigProjects.projects.length / projectsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
-        <div>
+        <div className="projects-wrapper">
           <h1 className="skills-heading">{bigProjects.title}</h1>
           <p
             className={
@@ -33,7 +47,7 @@ export default function StartupProject() {
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
+            {currentProjects.map((project, i) => {
               return (
                 <div
                   key={i}
@@ -97,6 +111,34 @@ export default function StartupProject() {
               );
             })}
           </div>
+
+          {totalPages > 1 && (
+            <div className="pagination">
+              <button
+                className="pagination-button"
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+              >
+                Previous
+              </button>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <button
+                  key={page}
+                  className={`pagination-button ${currentPage === page ? 'active' : ''}`}
+                  onClick={() => handlePageChange(page)}
+                >
+                  {page}
+                </button>
+              ))}
+              <button
+                className="pagination-button"
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+              >
+                Next
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </Fade>
