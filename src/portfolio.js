@@ -193,7 +193,7 @@ const bigProjects = {
       projectDesc: "A real-time monitoring and simulation system for airport infrastructure. Features include 3D visualization, crowd simulation, 4D timeline playback, asset placement, and a BIM model viewer.",
     },
     {
-      video: require("./assets/videos/BuildKingTopicC-20240830.mp4"),
+      video: require("./assets/videos/Buildkingtopicc-20240830.mp4"),
       projectName: "VR Training for Build King",
       projectDesc: "An immersive VR training simulation for construction workers. Designed to improve site safety awareness and procedure familiarity through hands-on virtual experiences.",
     },
