@@ -25,4 +25,3 @@ REM 返回上級目錄
 cd ..
 
 echo Deployment completed!
-pause 

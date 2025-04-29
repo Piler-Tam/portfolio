@@ -29,6 +29,14 @@ export default function StartupProject() {
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+  
+    // Smooth scroll to top of project section
+    const topElement = document.getElementById("projects");
+    if (topElement) {
+      setTimeout(() => {
+        topElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100); // Wait a bit to ensure DOM updates
+    }
   };
 
   return (
