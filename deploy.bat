@@ -16,7 +16,7 @@ REM 提交更改
 git commit -m "Deploy to GitHub Pages"
 
 REM 添加遠程倉庫
-git remote add origin https://github.com/Piler-Tam/Piler-Tam-software-developer-portfolio.git
+git remote add origin https://github.com/Piler-Tam/portfolio.git
 
 REM 強制推送到 gh-pages 分支
 git push -f origin master:gh-pages

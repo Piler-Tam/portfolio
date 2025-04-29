@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Piler Tam",
-  title: "Hi all, I'm Piler",
+  title: "Hi all, I'm Piler Tam",
   subTitle: emoji(
     "A passionate Software Developer having an experience of building game and VR applications with Unity / JavaScript / Nodejs and some other cool libraries and frameworks."
   ),
@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
       "⚡ Participated in the development of over 20 Unity-based game/VR Training/VR Cave projects for clients like Airport Authority Hong Kong, Build King, EPD, CIC and CLP"
