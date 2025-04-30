@@ -51,13 +51,12 @@ const skillsSection = {
   title: "What I do",
   subTitle: "SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
+    emoji("⚡ With 5 years experience building immersive games and VR applications using Unity"),
     emoji(
       "⚡ Participated in the development of over 20 Unity-based game/VR Training/VR Cave projects for clients like Airport Authority Hong Kong, Build King, EPD, CIC and CLP"
     ),
-    emoji("⚡ Designed and implemented core game mechanics and editor tools, optimized performance, and contributed to multi-platform deployment."),
     emoji(
-      "⚡ Collaborated closely with UI designers, project manager and 3D artists to ensure seamless integration of assets and a polished final product."
-    )
+      "⚡ Collaborated closely with UI designers, project manager and 3D artists to ensure seamless integration of assets and a polished final product"    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,7 +64,7 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "unity",
+      skillName: "unity c#",
       fontAwesomeClassname: "fab fa-unity"
     },
     {
@@ -85,7 +84,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -126,7 +125,7 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Unity / Game Development", //Insert stack or technology you have experience in
+      Stack: "Unity / C#", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
@@ -207,6 +206,11 @@ const bigProjects = {
       projectDesc: "An interactive LIDAR-based touch interface system for immersive CAVE environments. Enables users to interact with virtual scenes using natural hand gestures on physical walls.",
     },
     {
+      video: require("./assets/videos/VFlowManager.mp4"),
+      projectName: "Visual Flow Manager for Unity Editor",
+      projectDesc: "A custom Unity Editor tool allows designers and developers to create and manage complex game logic and sequences through a row-based visual interface.",
+    },
+    {
       video: require("./assets/videos/EPD.mp4"),
       projectName: "Immersive Cave for EPD in Plaza Hollywood",
       projectDesc: "A public-facing immersive installation to educate visitors about environmental protection topics. Developed for the Environmental Protection Department using CAVE technology.",
@@ -219,7 +223,7 @@ const bigProjects = {
     },
     {
       video: require("./assets/videos/unreal_mobile_control.mp4"),
-      projectName: "Mobile Control for Unreal Engine Applications",
+      projectName: "Immersive Cave and Mobile Control for Unreal Engine Applications",
       projectDesc: "A mobile interface to control and interact with Unreal Engine-based software remotely. Enables touch and gesture input from mobile devices to drive real-time 3D simulations.",
     },
     {
@@ -227,6 +231,7 @@ const bigProjects = {
       projectName: "AI Mahjong Recognition and Scoring App (Prototype)",
       projectDesc: "A prototype mobile app that uses AI and computer vision to recognize Mahjong tiles in real-time and automatically calculate scores, reducing errors and improving gameplay flow.",
     },
+
     {
       video: require("./assets/videos/zelda.mp4"),
       projectName: "Reimplemented Game Mechanics of Zelda",
