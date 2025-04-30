@@ -23,7 +23,7 @@ const greeting = {
   username: "Piler Tam",
   title: "Hi all, I'm Piler Tam",
   subTitle: emoji(
-    "A passionate Software Developer having an experience of building game and VR applications with Unity / JavaScript / Nodejs and some other cool libraries and frameworks."
+    "A passionate Software Developer having an experience of building game and VR applications with Unity / C# / Node.js and some other cool libraries and frameworks."
   ),
   // resumeLink:
   //   "https://drive.google.com/file/d/15Eb6RcDmoAYObz0QuZ6IREzMw7nrcRxi/view?usp=drive_link", // Set to empty to hide the button
@@ -367,7 +367,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+852-56414653",
+  // number: "+852-56414653",
   email_address: "tamchakkuen@gmail.com"
 };
 
